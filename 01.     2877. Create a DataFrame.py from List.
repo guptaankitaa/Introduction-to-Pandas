@@ -1,0 +1,10 @@
+import pandas as pd
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+    
+    column_names = ['student_id', 'age']                             #define column name
+    result = pd.DataFrame(student_data, columns= column_names)       #create dataframe 
+    return result
+
+   # TC = O(n)
+   # SC = O(n)
